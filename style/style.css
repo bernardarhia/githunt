@@ -31,6 +31,23 @@
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin: 0 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0047ffcc;
+  border-radius: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -182,7 +199,7 @@ header {
 }
 .user-details .followers-info .user .followers-details {
   justify-content: space-between;
-  margin: 2rem auto;
+  margin: 2rem;
 }
 .user-details .followers-info .user .followers-details .followers-name {
   font-weight: bold;

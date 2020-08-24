@@ -1,4 +1,4 @@
-const fetchUSers = async (user) => {
+const fetchUSers = async (user = `https://api.github.com/users/everich4040`) => {
   let response = await fetch(`https://api.github.com/users/${user}`);
   let data = await response.json();
   return data;

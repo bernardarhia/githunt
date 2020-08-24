@@ -22,3 +22,19 @@
         100% { transform: rotate(360deg); }
       }
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    margin: 0 .5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0047ffcc;
+    border-radius: 10px;
+  }
