@@ -1,0 +1,180 @@
+.user-details .followers-info .user .followers-details, .user-details .user-info .follow, .user-details .user-info .git-info, .nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+body {
+  background: #ffffff9b;
+}
+
+.container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  padding: 3rem 0 1rem 0;
+}
+
+.nav {
+  justify-content: space-between;
+}
+.nav .logo {
+  padding: 2rem;
+}
+.nav .logo .logo-text a {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #393232cf;
+}
+.nav .search {
+  padding: 2rem;
+}
+.nav .search-input {
+  padding: 1rem 4rem;
+  background: none;
+  border: 2.4px solid #686868;
+  font-size: 1rem;
+}
+.nav .search-btn {
+  background: #0047ffcc;
+  border: none;
+  padding: 0.8rem 3rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  margin: 0.4rem 0.5rem;
+  color: #fff;
+  box-shadow: 2px 2px 30px rgba(0, 71, 255, 0.2);
+}
+
+.user-details {
+  width: 100%;
+  margin: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.user-details .user-info {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 40px 4px rgba(0, 72, 255, 0.178);
+  padding: 2rem;
+}
+.user-details .user-info .user-avatar {
+  width: 8rem;
+  height: 8rem;
+  background: #000;
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+.user-details .user-info .user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user-details .user-info .social-media {
+  text-align: center;
+  padding: 0.6rem 0;
+  font-size: 1.4rem;
+}
+.user-details .user-info .social-media a {
+  color: #444343;
+}
+.user-details .user-info .git-info {
+  width: 95%;
+  margin: 1rem auto;
+  justify-content: center;
+}
+.user-details .user-info .git-info .repos, .user-details .user-info .git-info .username, .user-details .user-info .git-info .following {
+  font-weight: bold;
+  color: #464646;
+  padding: 1.2rem 4rem;
+  background: #FFFFFF;
+  margin: 0 1rem;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 71, 255, 0.25);
+}
+.user-details .user-info .git-info .repos span, .user-details .user-info .git-info .username span, .user-details .user-info .git-info .following span {
+  display: block;
+}
+.user-details .user-info .git-info .username {
+  background: rgba(42, 28, 205, 0.63) !important;
+  padding: 0;
+}
+.user-details .user-info .git-info .username a {
+  color: #333;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1.2rem 4rem;
+}
+.user-details .user-info .follow {
+  margin: 2rem 0 0 0;
+  justify-content: center;
+}
+.user-details .user-info .follow a {
+  font-weight: bold;
+  color: #464646;
+  padding: 1.2rem 5rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 71, 255, 0.25);
+}
+.user-details .followers-info {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 40px 4px rgba(0, 72, 255, 0.178);
+  padding: 2rem;
+}
+.user-details .followers-info .head {
+  text-align: center;
+}
+.user-details .followers-info .user {
+  height: 300px;
+}
+.user-details .followers-info .user .followers-details {
+  justify-content: space-between;
+  margin: 2rem auto;
+}
+.user-details .followers-info .user .followers-details .followers-name {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.user-details .followers-info .user .followers-details .followers-avatar {
+  width: 50px;
+  height: 50px;
+}
+.user-details .followers-info .user .followers-details .followers-avatar img {
+  width: 100%;
+}
+.user-details .followers-info h1 {
+  font-style: normal;
+  font-size: 2.3rem;
+  color: #444343;
+}
+.user-details .followers-info .center {
+  line-height: 300px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

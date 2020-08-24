@@ -1,0 +1,42 @@
+header{
+    padding: 3rem 0 1rem 0;
+}
+
+.nav{
+    @extend %flexy;
+    justify-content: space-between;
+.logo{
+    padding: 2rem;
+    .logo-text{
+        a{
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: #393232cf;
+        }
+    }
+}
+
+.search{
+    padding: 2rem;
+    &-input{
+        padding: 1rem 4rem;
+        background: none;
+        border: 2.4px solid #686868;
+        font-size: 1rem;
+    }
+
+    &-btn{
+        background: #0047ffcc;
+        border: none;
+        padding: .8rem 3rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        margin: .4rem .5rem;
+        color: #fff;
+        box-shadow: 2px 2px 30px rgba(0, 71, 255, 0.2);
+    }
+
+    }
+}
