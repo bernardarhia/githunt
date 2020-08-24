@@ -16,13 +16,18 @@ const gitUsername = $(".git-username")
 const following = $(".follows")
 const followers = $(".followers .user")
 const followUser =$(".follow a")
-
+const loader = $(".loader-container");
+const userInfo = $(".user-details")
 searchUserBtn.addEventListener("click", () => {
-    
+    loader.style.display = "flex";
     followers.innerHTML = ""
   console.log(userInput.value);
   fetchUSers(userInput.value)
     .then((data) => {
+      if(data){
+        loader.style.display = "none";
+
+      }
       if (data.twitter_username) {
         twitterUrl.href = `www.twitter.com/${data.twitter_username}`;
         twitterUrl.textContent = `@${data.twitter_username}`;
@@ -59,6 +64,8 @@ searchUserBtn.addEventListener("click", () => {
     })
     .catch((err) => {
       console.log("error " + err);
+      loader.style.display = "none";
+      userInfo.innerHTML = "<h1 style='text-align:center;'>AN ERROR OCCURED</h1>";
     });
 });
 
