@@ -91,6 +91,7 @@
 
     .user {
         height: 300px;
+        overflow-y:scroll ;
         .followers-details{
             @extend %flexy;
             justify-content: space-between;
