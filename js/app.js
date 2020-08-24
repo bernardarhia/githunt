@@ -15,6 +15,7 @@ const repos = $(".git-repos");
 const gitUsername = $(".git-username")
 const following = $(".follows")
 const followers = $(".followers .user")
+const followUser =$(".follow a")
 
 searchUserBtn.addEventListener("click", () => {
     
@@ -34,7 +35,7 @@ searchUserBtn.addEventListener("click", () => {
       gitUsername.textContent = data.login;
       gitUsername.href = data.url;
       following.textContent = data.following
-
+      followUser.href = `https://www.github.com/${data.login}`;
 
       if(data.followers){
          fetchFollowers(data.login).then(data =>{
