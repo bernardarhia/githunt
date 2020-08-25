@@ -18,15 +18,27 @@ const followers = $(".followers .user")
 const followUser =$(".follow a")
 const loader = $(".loader-container");
 const userInfo = $(".user-details")
+
+
+userInfo.style.display = "none"
 searchUserBtn.addEventListener("click", () => {
     loader.style.display = "flex";
     followers.innerHTML = ""
   console.log(userInput.value);
   fetchUSers(userInput.value)
     .then((data) => {
+      console.log(data.status, data.ok)
       if(data){
         loader.style.display = "none";
+        userInput.value = "";
+        userInfo.style.display = "grid"
 
+      }
+        if(!data.id){
+          userInfo.innerHTML = "<h1 style='text-align:center;'>USER NOT FOUND</h1>";
+          console.log("user not found")
+          return;
+          userInput.value = "";
       }
       if (data.twitter_username) {
         twitterUrl.href = `www.twitter.com/${data.twitter_username}`;
@@ -66,6 +78,7 @@ searchUserBtn.addEventListener("click", () => {
       console.log("error " + err);
       loader.style.display = "none";
       userInfo.innerHTML = "<h1 style='text-align:center;'>AN ERROR OCCURED</h1>";
+      userInput.value = "";
     });
 });
 

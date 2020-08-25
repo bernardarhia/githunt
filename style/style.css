@@ -222,4 +222,33 @@ header {
   text-align: center;
 }
 
+@media (max-width: 780px) {
+  .container {
+    width: 95%;
+  }
+  .container .nav {
+    display: block;
+    text-align: center;
+  }
+  .container .nav .logo {
+    font-size: 0.7rem;
+  }
+
+  .user-details {
+    display: block;
+  }
+  .user-details .user-info {
+    display: block;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .user-details .user-info .git-info {
+    display: block;
+  }
+  .user-details .user-info .git-info .repos, .user-details .user-info .git-info .username, .user-details .user-info .git-info .following {
+    width: 70%;
+    margin: 1.5rem auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
