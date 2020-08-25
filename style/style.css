@@ -222,12 +222,18 @@ header {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  .nav {
+    display: block !important;
+    text-align: center;
+  }
+}
 @media (max-width: 780px) {
   .container {
-    width: 95%;
+    width: 95% !important;
   }
   .container .nav {
-    display: block;
+    display: block !important;
     text-align: center;
   }
   .container .nav .logo {
@@ -235,15 +241,15 @@ header {
   }
 
   .user-details {
-    display: block;
+    display: block !important;
   }
   .user-details .user-info {
-    display: block;
+    display: block !important;
     margin: 3rem 0;
     width: 100%;
   }
   .user-details .user-info .git-info {
-    display: block;
+    display: block !important;
   }
   .user-details .user-info .git-info .repos, .user-details .user-info .git-info .username, .user-details .user-info .git-info .following {
     width: 70%;

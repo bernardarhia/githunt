@@ -1,9 +1,16 @@
+@media (max-width:1024px){
+    .nav{
+        display: block !important;
+        text-align: center;
+    }
+}
+
 @media (max-width:780px){
     .container{
-        width: 95%;
+        width: 95% !important;
 
         .nav{
-            display: block;
+            display: block !important;
             text-align: center;
             .logo{
                 font-size: .7rem;
@@ -11,15 +18,15 @@
         }
     }
     .user-details{
-        display: block;
+        display: block !important;
 
         .user-info{
-            display: block;
+            display: block !important;
             margin: 3rem 0;
             width: 100%;
             
         .git-info{
-            display: block;
+            display: block !important;
 
             .repos,.username,.following{
                 width: 70%;

@@ -22,24 +22,31 @@ const userInfo = $(".user-details")
 
 userInfo.style.display = "none"
 searchUserBtn.addEventListener("click", () => {
+  
+  if(userInput.value == ""){
+    alert("Input a user")
+    return;
+  }
     loader.style.display = "flex";
     followers.innerHTML = ""
   console.log(userInput.value);
+
   fetchUSers(userInput.value)
     .then((data) => {
-      console.log(data.status, data.ok)
+      if(!data.id){
+        userInfo.innerHTML = "<h1 style='text-align:center;'>USER NOT FOUND</h1>";
+        console.log("user not found")
+        userInput.value = "";
+    }else{
+      console.log(data);
+    }
       if(data){
         loader.style.display = "none";
         userInput.value = "";
         userInfo.style.display = "grid"
 
       }
-        if(!data.id){
-          userInfo.innerHTML = "<h1 style='text-align:center;'>USER NOT FOUND</h1>";
-          console.log("user not found")
-          return;
-          userInput.value = "";
-      }
+       
       if (data.twitter_username) {
         twitterUrl.href = `www.twitter.com/${data.twitter_username}`;
         twitterUrl.textContent = `@${data.twitter_username}`;
